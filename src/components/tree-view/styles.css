@@ -1,0 +1,26 @@
+body{
+    color: white;
+}
+
+.tree-view-container{
+    background-color: rgb(30, 89, 197);
+    width: fit-content;
+    padding: 20px;
+}
+.tree-view-container>.menu-list-container{
+    padding: 0;
+}
+
+.menu-list-container{
+    margin: 0;
+}
+
+.menu-item{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu-item-label{
+    display: flex;
+    gap: 16px;
+}
