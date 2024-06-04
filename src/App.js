@@ -7,6 +7,8 @@ import ImageSlider from './components/image-slider';
 import LoadMoreData from './components/load-more-data';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
+import QrCodeGenerator from './components/qr-code-generator';
+import LightDarkMode from './components/light-dark-switcher';
 
 function App() {
   return (
@@ -27,7 +29,13 @@ function App() {
     {/* <LoadMoreData /> */}
 
     {/* tree-view */}
-    <TreeView menus={menus}/>
+    {/* <TreeView menus={menus}/> */}
+
+    {/* qr code generator */}
+    {/* <QrCodeGenerator /> */}
+
+    {/* light-dark-mode */}
+    <LightDarkMode />
 
     </div>
   );
