@@ -1,0 +1,33 @@
+:root{
+    --tab-bg: rgb(136, 218, 81);
+    --tab-bg-active: purple;
+}
+
+.tab-container{
+    color: black;
+}
+
+.tab-headers {
+    color: white;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.tab-header{
+    background-color: var(--tab-bg);
+    padding: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.tab-header:hover{
+    background-color: color-mix(in srgb, var(--tab-bg) 60%, white);
+}
+
+.tab-header.tab-active{
+    background-color: var(--tab-bg-active);
+}

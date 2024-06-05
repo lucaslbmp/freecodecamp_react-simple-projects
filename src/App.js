@@ -10,8 +10,12 @@ import menus from './components/tree-view/data';
 import QrCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark-switcher';
 import ScrollIndicator from './components/scroll-indicator';
+import Tab from './components/tab';
+import { useState } from 'react';
 
 function App() {
+  const [currTab, setCurrTab] = useState(undefined);
+
   return (
     <div className="App">
       {/* accordian */}
@@ -39,7 +43,35 @@ function App() {
     {/* <LightDarkMode /> */}
 
     {/* scroll indicator */}
-    <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
+    {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
+
+    {/* tab system */}
+    <Tab tabs={[
+      {
+        label: "Tab 1",
+        content: 
+        <div>
+          <p>My tab 1 content</p>  
+          <button onClick={() => setCurrTab(1)}>Change to tab 2</button> 
+        </div>
+        
+      },
+      {
+        label: "Tab 2",
+        content: <p>My tab 2 content</p>  
+      },
+      {
+        label: "Tab 3",
+        content: <div>
+          <p>My tab 3 content</p>
+          <button onClick={() => setCurrTab(0)}>Change to tab 1</button>    
+        </div>
+        
+      }
+    ]}
+    onChange={index => setCurrTab(index)} 
+    currentTab={currTab}
+    />
 
     </div>
   );
