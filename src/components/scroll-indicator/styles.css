@@ -1,0 +1,6 @@
+.scrollable-product-list{
+    color: black;
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - var(--scrollbar-height));
+}

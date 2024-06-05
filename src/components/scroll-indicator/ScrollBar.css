@@ -1,0 +1,15 @@
+:root{
+    --scrollbar-height: 10px;
+}
+
+.scroll-progress-container{
+    background-color: green;
+    height: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.current-progress-bar {
+    background-color: red;
+    height: 100%;
+}
