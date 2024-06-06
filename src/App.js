@@ -12,6 +12,7 @@ import LightDarkMode from './components/light-dark-switcher';
 import ScrollIndicator from './components/scroll-indicator';
 import Tab from './components/tab';
 import { useState } from 'react';
+import GithubFinder from './components/github-finder';
 
 function App() {
   const [currTab, setCurrTab] = useState(undefined);
@@ -46,7 +47,7 @@ function App() {
     {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
 
     {/* tab system */}
-    <Tab tabs={[
+    {/* <Tab tabs={[
       {
         label: "Tab 1",
         content: 
@@ -71,7 +72,10 @@ function App() {
     ]}
     onChange={index => setCurrTab(index)} 
     currentTab={currTab}
-    />
+    /> */}
+
+    {/* github finder */}
+    <GithubFinder />
 
     </div>
   );

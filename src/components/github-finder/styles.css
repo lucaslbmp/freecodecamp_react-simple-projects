@@ -1,0 +1,91 @@
+:root{
+    --primary-color: #41b3b3;
+    --background-color: #ddd;
+    --card-bg: #cceedd;
+}
+
+.github-finder-container{
+    color: #000;
+    padding: 1rem;
+    background-color: var(--background-color)
+}
+
+.search-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.search-button{
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-container{
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    max-width: 80%;
+
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: #fff;
+
+    container: profile / inline-size;
+}
+
+@container profile (max-width: 600px){
+    .github-avatar{
+        display: none;
+    }
+}
+
+.separator{
+    width: 10%; 
+    height: 2px;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.github-text-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.github-user-name{
+    margin: 0;
+}
+
+.github-user-username{
+    margin: 0;
+    color: #aaa;
+}
+
+.github-bio{
+    justify-content: center;
+}
+
+.github-avatar{
+    max-width: 196px;
+}
+
+.github-avatar .github-avatar-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.users-icon{
+    vertical-align: baseline;
+    margin: auto 0.5rem;
+}
+
+.redirect-icon{
+    margin-left: 1rem;
+    color: var(--primary-color);
+}
