@@ -14,6 +14,7 @@ import Tab from './components/tab';
 import { useState } from 'react';
 import GithubFinder from './components/github-finder';
 import SearchAutocomplete from './components/search-autocomplete';
+import TicTacToe from './components/tic-tac-toe';
 
 function App() {
   const [currTab, setCurrTab] = useState(undefined);
@@ -79,7 +80,10 @@ function App() {
     {/* <GithubFinder /> */}
 
     {/* search autocomplete */}
-    <SearchAutocomplete />
+    {/* <SearchAutocomplete /> */}
+
+    {/* tic tac toe */}
+    <TicTacToe />
 
     </div>
   );

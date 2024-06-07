@@ -1,0 +1,17 @@
+.tic-tac-toe-container .row{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    font-size: 48px;
+}
+
+.square{
+    background-color: rgb(211, 138, 138);
+    border: 1px solid brown;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+}
+
+.highlight{
+    background-color: greenyellow;
+}
