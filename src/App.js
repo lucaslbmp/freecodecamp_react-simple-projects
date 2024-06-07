@@ -15,6 +15,8 @@ import { useState } from 'react';
 import GithubFinder from './components/github-finder';
 import SearchAutocomplete from './components/search-autocomplete';
 import TicTacToe from './components/tic-tac-toe';
+import FeatureFlagsGlobalState from './components/feature-flag/context';
+import FeatureFlags from './components/feature-flag';
 
 function App() {
   const [currTab, setCurrTab] = useState(undefined);
@@ -83,7 +85,12 @@ function App() {
     {/* <SearchAutocomplete /> */}
 
     {/* tic tac toe */}
-    <TicTacToe />
+    {/* <TicTacToe /> */}
+
+    {/* feature flags */}
+    <FeatureFlagsGlobalState>
+      <FeatureFlags />
+    </FeatureFlagsGlobalState>
 
     </div>
   );

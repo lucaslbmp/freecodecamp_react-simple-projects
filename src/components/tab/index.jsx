@@ -17,7 +17,7 @@ export default function Tab({ tabs, onChange, currentTab }) {
   return (
     <div className="tab-container">
       <div className="tab-headers">
-        {tabs.map((tab, index) => (
+        {tabs?.map((tab, index) => (
           <span
             className={
               "tab-header " + (index === currentTabIndex ? "tab-active" : "")
@@ -29,7 +29,7 @@ export default function Tab({ tabs, onChange, currentTab }) {
           </span>
         ))}
       </div>
-      <div className="tab-content">{tabs[currentTabIndex].content}</div>
+      <div className="tab-content">{tabs[currentTabIndex]?.content}</div>
     </div>
   );
 }
