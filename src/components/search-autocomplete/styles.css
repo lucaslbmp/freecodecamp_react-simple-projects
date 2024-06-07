@@ -1,0 +1,35 @@
+.search-autocomplete-container{
+    color: black;
+}
+
+.users-list-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.user-tile{
+    flex: 1 0 100px;
+    border: 1px solid #3d0b0b;
+    width: fit-content;
+    padding: 2rem;
+}
+
+.suggestions-container{
+    list-style-type: none;
+    background-color: #f5f5f5;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.suggestions-container li{
+    cursor: pointer;
+}
+
+.suggestions-container li:hover{
+    background-color: #ddd;
+}
+

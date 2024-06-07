@@ -58,7 +58,11 @@ export default function GithubFinder() {
               <FaUsers className="users-icon" />
               <span>{`${user.followers} followers \xb7 ${user.following} following`}</span>
             </div>
+
+            <span>{`Joined on ${(new Date(user.created_at)).toLocaleDateString()}`}</span>
+
             <hr className="separator"/>
+
             <div className="github-bio">{user.bio}</div>
           </section>
         </div>

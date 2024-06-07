@@ -13,6 +13,7 @@ import ScrollIndicator from './components/scroll-indicator';
 import Tab from './components/tab';
 import { useState } from 'react';
 import GithubFinder from './components/github-finder';
+import SearchAutocomplete from './components/search-autocomplete';
 
 function App() {
   const [currTab, setCurrTab] = useState(undefined);
@@ -75,7 +76,10 @@ function App() {
     /> */}
 
     {/* github finder */}
-    <GithubFinder />
+    {/* <GithubFinder /> */}
+
+    {/* search autocomplete */}
+    <SearchAutocomplete />
 
     </div>
   );
