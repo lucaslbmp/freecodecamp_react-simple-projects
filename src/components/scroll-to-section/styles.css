@@ -1,0 +1,13 @@
+.buttons{
+    display: flex; 
+    gap: 1rem; 
+    justify-content: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: inherit;
+    background-color: chocolate;
+    padding: .5rem;
+    border-radius: 5px;
+}

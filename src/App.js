@@ -20,6 +20,8 @@ import FeatureFlags from './components/feature-flag';
 import TestUseFetchHook from './components/use-fetch/test';
 import TestUseOutsideClickHook from './components/use-outside-click/test';
 import TestUseWindowResize from './components/use-window-resize/test';
+import ScrollToTopAndBottom from './components/scroll-to-top-and-bottom';
+import ScrollToSection from './components/scroll-to-section';
 
 function App() {
   const [currTab, setCurrTab] = useState(undefined);
@@ -102,7 +104,13 @@ function App() {
     {/* <TestUseOutsideClickHook /> */}
 
     {/* window resize */}
-    <TestUseWindowResize />
+    {/* <TestUseWindowResize /> */}
+
+    {/* scroll to top / bottom */}
+    {/* <ScrollToTopAndBottom /> */}
+
+    {/* scroll to a particular section */}
+    <ScrollToSection />
 
     </div>
   );
