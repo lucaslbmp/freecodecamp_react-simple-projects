@@ -17,6 +17,9 @@ import SearchAutocomplete from './components/search-autocomplete';
 import TicTacToe from './components/tic-tac-toe';
 import FeatureFlagsGlobalState from './components/feature-flag/context';
 import FeatureFlags from './components/feature-flag';
+import TestUseFetchHook from './components/use-fetch/test';
+import TestUseOutsideClickHook from './components/use-outside-click/test';
+import TestUseWindowResize from './components/use-window-resize/test';
 
 function App() {
   const [currTab, setCurrTab] = useState(undefined);
@@ -88,9 +91,18 @@ function App() {
     {/* <TicTacToe /> */}
 
     {/* feature flags */}
-    <FeatureFlagsGlobalState>
+    {/* <FeatureFlagsGlobalState>
       <FeatureFlags />
-    </FeatureFlagsGlobalState>
+    </FeatureFlagsGlobalState> */}
+
+    {/* fetch data */}
+    {/* <TestUseFetchHook /> */}
+
+    {/* click outside hook */}
+    {/* <TestUseOutsideClickHook /> */}
+
+    {/* window resize */}
+    <TestUseWindowResize />
 
     </div>
   );
